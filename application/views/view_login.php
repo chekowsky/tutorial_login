@@ -20,8 +20,8 @@ $attributes = array("class" => "form-horizontal", "id" => "loginform", "name" =>
 ?>
 <div class="container">
 	<div id="login-row" class="row justify-content-center align-items-center">
-		<div id="login-column" class="col-md-6">
-			<div id="login-box" class="col-md-12">
+		<div id="login-column" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+			<div id="login-box" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
 				<?php echo form_open('login/ValidarAcceso', ['class' => 'form-signin', 'role' => 'form']); ?>
 				<h3 class="text-center">Login</h3>
 				<div class="form-group">

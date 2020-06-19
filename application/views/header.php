@@ -2,6 +2,7 @@
 <html lang="es class="h-100">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/vendor/normalize/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/vendor/bootstrap/css/bootstrap.min.css">
 	<script type="text/javascript" language="javascript" src="<?php echo base_url();?>assets/vendor/jquery/jquery-3.5.1.min.js"></script>
@@ -13,7 +14,7 @@
 
 	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/DataTables-1.10.21/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/DataTables-1.10.21/js/dataTables.bootstrap4.min.js"></script>
-	<script type="text/javascript" src="assets/vendor/datatable/JSZip-2.5.0/jszip.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/JSZip-2.5.0/jszip.min.js"></script>
 	<link href="<?php echo base_url();?>assets/vendor/datatable/Buttons-1.6.2/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 	<link href="<?php echo base_url();?>assets/vendor/datatable/DataTables-1.10.21/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 	<link href="<?php echo base_url();?>assets/vendor/datatable/DataTables-1.10.21/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
