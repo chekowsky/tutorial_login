@@ -39,7 +39,7 @@ $attributes = array("class" => "form-horizontal", "id" => "loginform", "name" =>
 					</div>
 				</div>
 				<div class="form-group">
-					<input type="submit" name="submit" class="btn btn-primary btn-md" value="submit">
+					<input type="submit" name="submit" class="btn btn-primary btn-md" value="Iniciar sesion">
 				</div>
 				</form>
 				<div class="alert alert-primary" role="alert">

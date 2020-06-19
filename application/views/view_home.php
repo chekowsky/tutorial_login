@@ -1,1 +1,1 @@
-<center><img src="<?php echo base_url();?>imagenes/inca.png"/></center>
+<center><img src="<?php echo base_url();?>assets/imagenes/inca.png"/></center>

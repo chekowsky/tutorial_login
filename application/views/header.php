@@ -7,7 +7,24 @@
 	<script type="text/javascript" language="javascript" src="<?php echo base_url();?>assets/vendor/jquery/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" language="javascript" src="<?php echo base_url();?>assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" language="javascript" src="<?php echo base_url();?>assets/vendor/popper/popper.min.js"></script>
-	<script type="text/javascript" language="javascript" src="<?php echo base_url();?>assets/js/jquery.dataTables.js"></script>
+
+	<link href="<?php echo base_url();?>assets/vendor/datatable/datatables.min.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/datatables.min.js"></script>
+
+	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/DataTables-1.10.21/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/DataTables-1.10.21/js/dataTables.bootstrap4.min.js"></script>
+	<script type="text/javascript" src="assets/vendor/datatable/JSZip-2.5.0/jszip.min.js"></script>
+	<link href="<?php echo base_url();?>assets/vendor/datatable/Buttons-1.6.2/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo base_url();?>assets/vendor/datatable/DataTables-1.10.21/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo base_url();?>assets/vendor/datatable/DataTables-1.10.21/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo base_url();?>assets/vendor/datatable/Buttons-1.6.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/pdfmake-0.1.36/pdfmake.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/pdfmake-0.1.36/vfs_fonts.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/Buttons-1.6.2/js/dataTables.buttons.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/Buttons-1.6.2/js/buttons.html5.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/Buttons-1.6.2/js/buttons.print.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/Buttons-1.6.2/js/buttons.bootstrap4.min.js"></script>';
+
 	<style>
 		body {
 			min-height: 100vh !important;
