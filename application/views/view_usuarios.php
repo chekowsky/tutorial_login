@@ -7,6 +7,7 @@
 						"url": "assets/vendor/datatable/dataTables.spanish.lang"
 					},
 					"processing": true,
+					"responsive": true,
 					initComplete: function(){
 						var api = this.api();
 

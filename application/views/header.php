@@ -25,6 +25,11 @@
 	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/Buttons-1.6.2/js/buttons.print.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/Buttons-1.6.2/js/buttons.bootstrap4.min.js"></script>';
 
+	<link href="<?php echo base_url();?>assets/vendor/datatable/Responsive-2.2.5/css/responsive.dataTables.min.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo base_url();?>assets/vendor/datatable/Responsive-2.2.5/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/Responsive-2.2.5/js/dataTables.responsive.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>assets/vendor/datatable/Responsive-2.2.5/js/responsive.bootstrap4.min.js"></script>
+
 	<style>
 		body {
 			min-height: 100vh !important;
