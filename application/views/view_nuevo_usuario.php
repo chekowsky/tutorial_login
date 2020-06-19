@@ -59,6 +59,22 @@
 	echo '</td>';
 	echo '<td><font color="red">'.form_error('EMAIL').'</font></td>';
 	echo '</tr>';
+
+	$Anexo = array(
+		'name'        => 'ANEXO',
+		'id'          => 'ANEXO',
+		'size'        => 50,
+		'value'		  => set_value('ANEXO',@$datos_usuarios[0]->ANEXO),
+		'placeholder' => 'Anexo',
+		'type'        => 'text',
+		);
+		echo '<tr>';
+		echo '<td>'.form_label("Anexo:",'ANEXO').'</td>';
+		echo '<td>';
+		echo form_input($Apellidos);
+		echo '</td>';
+		echo '<td><font color="red">'.form_error('ANEXO').'</font></td>';
+		echo '</tr>';
 	
 	$CampoOpcionesTipo = array(
 	'0'               	=> '---SELECCIONE TIPO DE USUARIO---',

@@ -47,6 +47,7 @@ if(isset($_GET['permisos'])){
 		<tr>
 			<th>NOMBRE</th>
 			<th>APELLIDOS</th>
+			<th>ANEXO</th>
 			<th>EMAIL</th>
 			<th>FECHA REGISTRO</th>
 			<th>TIPO</th>
@@ -62,6 +63,7 @@ if(isset($_GET['permisos'])){
  		echo '<tr>';
  		echo '<td>'.$usuario->NOMBRE.'</td>';
 		echo '<td>'.$usuario->APELLIDOS.'</td>';
+		echo '<td>'.$usuario->ANEXO.'</td>';
 		echo '<td>'.$usuario->EMAIL.'</td>';
 		echo '<td>'.$usuario->FECHA_REGISTRO.'</td>';
 		echo '<td>'.$usuario->TIPO.'</td>';

@@ -62,9 +62,10 @@ class usuarios extends CI_Controller
      }
 	 function ValidaCampos(){
 		/*Campos para validar que no esten vacio los campos*/
-		 $this->form_validation->set_rules("NOMBRE", "Nombre", "trim|required");
-		 $this->form_validation->set_rules("APELLIDOS", "Apellidos", "trim|required");
+		 $this->form_validation->set_rules("NOMBRE", "Nombre", "trim|required|alpha");
+		 $this->form_validation->set_rules("APELLIDOS", "Apellidos", "trim|required|alpha");
 		 $this->form_validation->set_rules("EMAIL", "Email", "trim|required|valid_email");
+		 $this->form_validation->set_rules("ANEXO", "Anexo", "required|max_length[6]|min_length[6]|is_natural");
 		 $this->form_validation->set_rules("TIPO", "Tipo", "callback_select_tipo");
 		 $this->form_validation->set_rules("ESTATUS", "Estatus", "callback_select_estatus");
 	 }
