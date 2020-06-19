@@ -1,70 +1,52 @@
 <?php
-           $usuario = array(
-              'name'        => "username",
-              'id'          => "username",
-              'size'        => "50",
-              'value'       => set_value("username"),
-              'placeholder' => "Teclea tu Email",
-             );
-           $password = array(
-              'name'        => "password",
-              'id'          => "password",
-              'size'        => "50",
-              'value'       => set_value("password"),
-              'type'        => "password",
-             );
-          $attributes = array("class" => "form-horizontal", "id" => "loginform", "name" => "loginform");
-          echo form_open("login/ValidarAcceso", $attributes);
+$usuario = array(
+		'name' => "username",
+		'id' => "username",
+		'size' => "50",
+		'value' => set_value("username"),
+		'placeholder' => "",
+		'class' => 'form-control'
+);
+$password = array(
+		'name' => "password",
+		'id' => "password",
+		'size' => "50",
+		'value' => set_value("password"),
+		'type' => "password",
+		'class' => 'form-control'
+);
+$attributes = array("class" => "form-horizontal", "id" => "loginform", "name" => "loginform");
+//echo form_open("login/ValidarAcceso", $attributes);
 ?>
-<table width='450' border='0' class='ventanas' cellspacing='0' cellpadding='0'>
-<tr>
-     <td colspan='3' class='tabla_ventanas_login' height='10' colspan='3'><legend align="center">::: LOGIN ::: </legend></td>
-
-</tr>
-<tr><td colspan=3><br/></td></tr>
-<tr>
-<td colspan='3'>
-     <center>
-     <table>
-     <tr>
-          <td><?php echo form_label("Email:","lblEmail"); ?></td>
-          <td>
-               <?php echo form_input($usuario); ?>
-               <font color="red"><?php echo form_error('username'); ?></font>
-          </td> 
-
-     </tr>
-     <tr>
-          <td><?php echo form_label("Password:","lblPassword"); ?></td>
-          <td>
-               <?php echo form_input($password); ?>
-               <font color="red"><?php echo form_error('password'); ?></font>
-          </td>
-
-     </tr>
-     </table>
-     </center>
-</td>
-</tr>
-<tr>
-<!--<td height='50' colspan=3 align='center'><button class="clean-gray"> LOGIN </button></td>-->
-<td colspan="3" align ='center'>
-        <input id="btn_login" name="btn_login" type="submit" class="btn btn-sm btn-success" value="Login">
-        <input id="btn_cancel" name="btn_cancel" type="reset" class="btn btn-default" value="Limpiar">
-</td>
-</tr>
-<tr>
-     <td colspan="3" align ='center'>
-          <table>
-          <tr>
-          <td>
-               <?php echo $this->session->flashdata('msg'); ?>
-          </td>
-          </tr>
-          </table>
-     </td>
-</tr>
-</table>
- <?php echo form_close(); ?>
-          
-</center>
+<div class="container">
+	<div id="login-row" class="row justify-content-center align-items-center">
+		<div id="login-column" class="col-md-6">
+			<div id="login-box" class="col-md-12">
+				<?php echo form_open('login/ValidarAcceso', ['class' => 'form-signin', 'role' => 'form']); ?>
+				<h3 class="text-center">Login</h3>
+				<div class="form-group">
+					<label for="username">Email:</label><br>
+					<?php echo form_input($usuario); ?>
+					<div class="invalid-feedback">
+						<?php echo form_error('email'); ?>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="password">Contraseña:</label><br>
+					<?php echo form_input($password); ?>
+					<div class="invalid-feedback">
+						<?php echo form_error('password'); ?>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="submit" name="submit" class="btn btn-primary btn-md" value="submit">
+				</div>
+				</form>
+				<div class="alert alert-primary" role="alert">
+					<?php echo $this->session->flashdata('msg'); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<?php echo form_close(); ?>
