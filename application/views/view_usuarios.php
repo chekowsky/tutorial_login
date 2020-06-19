@@ -69,10 +69,10 @@ if(isset($_GET['permisos'])){
 		echo '<td>'.$usuario->TIPO.'</td>';
  			
  			/*Si es estatus mostramos en texto*/
-			if($usuario->TIPO==0){
+			if($usuario->TIPO == 1){
 			echo '<td>Activo</td>';
 			}
-			if($usuario->TIPO==1){
+			if($usuario->TIPO == 0){
 			echo '<td>Inactivo</td>';
 			}
 		echo '<td>'

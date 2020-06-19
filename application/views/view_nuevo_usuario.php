@@ -71,7 +71,7 @@
 		echo '<tr>';
 		echo '<td>'.form_label("Anexo:",'ANEXO').'</td>';
 		echo '<td>';
-		echo form_input($Apellidos);
+		echo form_input($Anexo);
 		echo '</td>';
 		echo '<td><font color="red">'.form_error('ANEXO').'</font></td>';
 		echo '</tr>';
@@ -91,8 +91,8 @@
 	
 	$Estatus = array(
 	'NONE'   => '---SELECCIONE ESTATUS---',
-	'0'	     => 'Activo',
-	'1'      => 'Inactivo',
+	'1'	     => 'Activo',
+	'0'      => 'Inactivo',
 	);
 	echo '<tr>';
 	echo '<td>'.form_label("Estatus:",'ESTATUS').'</td>';
